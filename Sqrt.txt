@@ -1,0 +1,16 @@
+class Solution {
+    public int mySqrt(int x) {
+        if(x==0 || x==1)
+            return x;
+        int i=1, res=1;
+        while(res<=x){
+            i++;
+            res=i*i;
+        }
+        return i-1;
+    }
+}
+
+//wrong output for input 2147395600
+//correct answer 46340
+//my answer 289398
